@@ -1,34 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
+
+    <title>My Image Gallery</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>MY IMAGE-GALLERY!</h1>
+    <h1>MY IMAGE GALLERY</h1>
+
+    <!-- FILTER BUTTONS -->
+    <div class="filters">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('birds')">Birds</button>
+        <button onclick="filterImages('food')">Food</button>
+    </div>
+
+
+    <!-- GALLERY -->
     <div class="gallery">
 
-    <img class="nature" src="images/download (13).jpg" alt="Nature">
-    <img class="nature" src="images/18577417210009072.jpg" alt="Nature">
-    <img class="nature" src="images/724375921369483979.jpg" alt="Nature">
-    <img class="nature" src="images/812970170281406531.jpg" alt="Nature">
-    <img class="nature" src="images/8092474327912358.jpg" alt="Nature">
-    <img class="nature" src="images/377106168783679307.jpg" alt="Nature">
-    <img class="nature" src="images/86272149106676180.jpg" alt="Nature">
+        <!-- Nature -->
+        <img class="nature" src="images/1032239177109472817.jpg" alt="Nature Image">
+        <img class="nature" src="images/1097682109230201491.jpg" alt="Nature Image">
+        <img class="nature" src="images/1101059809014535056.jpg" alt="Nature Image">
+        <img class="nature" src="images/14073817581935301.jpg" alt="Nature Image">
+        <img class="nature" src="images/162833342768862842.jpg" alt="Nature Image">
+        <img class="nature" src="images/164381455145173789.jpg" alt="Nature Image">
+        <img class="nature" src="images/18577417210009072.jpg" alt="Nature Image">
+        <img class="nature" src="images/377106168783679307.jpg" alt="Nature Image">
+        <img class="nature" src="images/476959416808274856.jpg" alt="Nature Image">
+        <img class="nature" src="images/578782989617094404.jpg" alt="Nature Image">
+        <img class="nature" src="images/670895675772822085.jpg" alt="Nature Image">
+        <img class="nature" src="images/688558230550104905.jpg" alt="Nature Image">
+        <img class="nature" src="images/724375921369483979.jpg" alt="Nature Image">
+        <img class="nature" src="images/8092474327912358.jpg" alt="Nature Image">
+        <img class="nature" src="images/812970170281406531.jpg" alt="Nature Image">
+        <img class="nature" src="images/829014243935511993.jpg" alt="Nature Image">
+        <img class="nature" src="images/86272149106676180.jpg" alt="Nature Image">
 
-    <img class="birds" src="images/Blue Budgerigar, commonly known as a Budgie or Parakeet.jpg" alt="Bird">
-    <img class="birds" src="images/Lovely Pink Bird beautiful.jpg" alt="Bird">
+        <!-- Birds -->
+        <img class="birds"
+             src="images/Blue Budgerigar, commonly known as a Budgie or Parakeet.jpg"
+             alt="Blue Budgerigar">
 
-    <img class="nature" src="images/tasha.jpg" alt="Nature">
-    <img class="nature" src="images/164381455145173789.jpg" alt="Nature">
+        <img class="birds"
+             src="images/Lovely Pink Bird beautiful.jpg"
+             alt="Lovely Pink Bird">
 
-</div>
+        <!-- Food -->
+        <img class="food"
+             src="images/Easy Campfire Grilled Corn – The Perfect Outdoor Snack.jpg"
+             alt="Grilled Corn">
 
- <div class="lightbox" id="lightbox">
+        <!-- Extra image -->
+        <img class="nature"
+             src="images/download (11).jpg"
+             alt="Nature Image">
+
+    </div>
+
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
 
         <span class="close">&times;</span>
 
@@ -39,6 +79,7 @@
         <button class="next">&#10095;</button>
 
     </div>
+
 
     <script src="script.js"></script>
 
